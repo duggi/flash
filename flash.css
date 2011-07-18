@@ -1,0 +1,83 @@
+.flash {
+  background: #fff;
+  background: rgba(255,255,255,.6);
+  padding: 5px;
+  font-size: 20px;
+  width: 600px;
+  position: fixed;
+  top: 80px;
+  left: 40px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  z-index: 999;
+}
+
+.flash > div {
+  background: #def;
+  border: 5px solid #369;
+  color: #369;
+  padding: 20px;
+  padding-left: 100px;
+  padding-top: 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  position: relative;
+  min-height: 45px; /* must be set here, not in wrapper */;
+}
+
+.flash > div.info { /* the default */
+  background: #def url('flash-sprites.png') -225px 20px no-repeat;
+  border-color: #369;
+  color: #369;
+}
+
+.flash > div.error {
+  background: #fcc url('flash-sprites.png') 20px -225px no-repeat;
+  border-color: #900;
+  color: #900;
+}
+
+.flash > div.success {
+  background: #cfc url('flash-sprites.png') -70px -145px no-repeat;
+  border-color: #090;
+  color: #090;
+}
+
+.flash > div.warning {
+  background: #ffc url('flash-sprites.png') -145px -55px no-repeat;
+  border-color: #f93;
+  color: #f63;
+}
+
+.flash-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: url('close.png') 0 0 no-repeat;
+  z-index: 3200;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor:pointer;
+}
+
+ul.flash-links {
+  margin-top: 10px;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+ul.flash-links > li {
+  margin-bottom: 5px;
+  padding-left: 15px;
+  background: url('arrow.png') 0 4px no-repeat;
+  list-style-type: none;
+}
+
+.flash-hint {
+  font-weight: normal;
+  font-size: 12px;
+
+}
